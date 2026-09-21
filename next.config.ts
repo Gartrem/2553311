@@ -1,3 +1,15 @@
 import type { NextConfig } from 'next';
-const nextConfig: NextConfig = { images: { domains: ['images.unsplash.com'] } };
+
+const isProd = process.env.NODE_ENV === 'production';
+
+const nextConfig: NextConfig = {
+  output: 'export',
+  basePath: isProd ? '/2553311' : '',
+  assetPrefix: isProd ? '/2553311/' : '',
+  images: {
+    unoptimized: true,
+    domains: ['images.unsplash.com'],
+  },
+};
+
 export default nextConfig;
