@@ -6,12 +6,13 @@ import { useState } from 'react';
 const items = [
   ['/projects','Проекты'],['/services','Услуги'],['/about','О студии'],['/process','Процесс'],['/contacts','Контакты']
 ] as const;
+const logoSrc = process.env.NODE_ENV === 'production' ? '/2553311/assets/logo-white.png' : '/assets/logo-white.png';
 
 export default function Header(){
   const [open,setOpen]=useState(false);
   return <header className="siteHeader">
     <Link className="brand" href="/" aria-label="Ателье Авторского Ремонта">
-      <Image src="/assets/logo-white.png" alt="Ателье Авторского Ремонта" width={116} height={112} priority />
+      <Image src={logoSrc} alt="Ателье Авторского Ремонта" width={116} height={112} priority />
     </Link>
     <nav className="desktopNav">{items.map(([href,label])=><Link key={href} href={href}>{label}</Link>)}</nav>
     <div className="headerContact"><a href="tel:+73832553311">+7 (383) 255-33-11</a><span>Новосибирск</span></div>
