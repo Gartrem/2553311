@@ -1,0 +1,3 @@
+import ContactCta from '@/components/ContactCta';
+export const metadata={title:'Контакты'};
+export default function Contacts(){return <><section className="innerPage sectionLight"><div className="pageTitle"><span className="eyebrow">Контакты</span><h1>Начнём с разговора</h1><p>Опишите объект и задачу — после первичного знакомства можно определить подходящий формат следующего шага.</p></div><div className="contactsGrid"><div><span>Телефон</span><a href="tel:+73832553311">+7 (383) 255-33-11</a></div><div><span>Город</span><strong>Новосибирск</strong></div><div><span>Адрес</span><strong>Добавить подтверждённый адрес</strong></div><div><span>Мессенджеры</span><strong>Telegram · WhatsApp</strong></div></div></section><ContactCta/></>}
