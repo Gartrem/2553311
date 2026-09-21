@@ -1,0 +1,4 @@
+import ContactCta from '@/components/ContactCta';
+export const metadata={title:'Процесс'};
+const data=[['01','Знакомство и задача','Обсуждаем задачу, формат, образ жизни, бюджетные рамки и исходные данные.'],['02','Проектирование','Формируем планировку, дизайн-концепцию и полный комплект решений.'],['03','Реализация','Организуем работы, контролируем качество, сроки и соответствие проекту.'],['04','Сдача объекта','Передаём готовое пространство и необходимые документы.']];
+export default function Process(){return <><section className="innerPage sectionLight"><div className="pageTitle"><span className="eyebrow">Как мы работаем</span><h1>Простой и понятный процесс</h1><p>Структура процесса прозрачна: вы понимаете, что происходит на объекте и что будет дальше.</p></div><div className="processLong">{data.map(([n,t,d])=><article key={n}><strong>{n}</strong><div><h2>{t}</h2><p>{d}</p></div></article>)}</div></section><ContactCta/></>}
