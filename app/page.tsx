@@ -44,7 +44,6 @@ export default function Home() {
           <span className="microCopy">Бесплатная<br/>консультация</span>
         </div>
       </div>
-      <div className="heroAside">Хороший<br/>интерьер<br/>делает жизнь<br/>лучше<span /><small>Михаил Смирнов<br/>Основатель студии</small></div>
       <div className="heroStats" aria-label="О студии в цифрах">
         <div><strong>20+</strong><span>лет опыта</span></div>
         <div><strong>300+</strong><span>реализованных<br/>проектов</span></div>

@@ -20,6 +20,7 @@ export default function HeroGallery() {
         <Image src={slide.src} alt={index === active ? slide.alt : ''} fill priority={index === 0} sizes="100vw" />
       </div>)}
     </div>
+    {active === 0 && <div className="heroAside">Хороший<br/>интерьер<br/>делает жизнь<br/>лучше<span /><small>Михаил Смирнов<br/>Основатель студии</small></div>}
     <div className="heroSlideControls" aria-label="Фотографии интерьеров">
       <div className="heroSlideNumbers">{slides.map((_, index) => <button key={index} type="button" className={active === index ? 'isActive' : ''} onClick={() => setActive(index)} aria-label={`Показать фотографию ${index + 1}`} aria-current={active === index ? 'true' : undefined}>{String(index + 1).padStart(2, '0')}</button>)}</div>
       <span className="controlRule" aria-hidden="true" />
