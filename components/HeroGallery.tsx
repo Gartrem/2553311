@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 const base = process.env.NODE_ENV === 'production' ? '/2553311' : '';
 const slides = [
-  { src: `${base}/assets/hero-founder-scene.png`, alt: 'Михаил Смирнов в панорамном интерьере в тёплом вечернем свете' },
+  { src: `${base}/assets/hero-founder-scene-v2.png`, alt: 'Михаил Смирнов в панорамном интерьере в тёплом вечернем свете' },
   { src: `${base}/assets/living-room.webp`, alt: 'Гостиная с натуральным камнем, деревом и мягким дневным светом' },
   { src: `${base}/assets/kitchen-dining.webp`, alt: 'Современная кухня с обеденной зоной в тёплых природных тонах' },
 ];
@@ -29,4 +29,5 @@ export default function HeroGallery() {
     </div>
   </>;
 }
+
 
