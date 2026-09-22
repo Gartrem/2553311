@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import ProjectGallery from '@/components/ProjectGallery';
+import ExternalArrow from '@/components/ExternalArrow';
 import { studioProjects } from '@/lib/projects';
 
 export const metadata = {
@@ -26,14 +27,14 @@ export default function Projects() {
           <span>Реальный проект</span>
         </a>
         <div className="portfolioFeatureMeta"><span>0{index + 1} / {project.category}</span><span>{project.area} м²</span></div>
-        <div className="portfolioFeatureTitle"><h2>{project.title}</h2><a href={`#${project.anchor}`} aria-label={`Перейти к проекту ${project.title}`}>↗</a></div>
+        <div className="portfolioFeatureTitle"><h2>{project.title}</h2><a href={`#${project.anchor}`} aria-label={`Перейти к проекту ${project.title}`}><ExternalArrow /></a></div>
       </article>)}
     </div>
 
     <div className="portfolioCatalog" id="all-projects">
       <div className="portfolioCatalogHeading"><span className="eyebrow">Полное портфолио</span><h2>Все проекты</h2><p>Фрагменты 21 реализованного проекта. Выберите карточку, чтобы рассмотреть фотографию.</p></div>
       <ProjectGallery />
-      <p className="portfolioOriginalLink">Другие фотографии этих объектов доступны в <a href="https://2553311.ru/#rec454978245" target="_blank" rel="noopener noreferrer">исходном портфолио студии ↗</a>.</p>
+      <p className="portfolioOriginalLink">Другие фотографии этих объектов доступны в <a href="https://2553311.ru/#rec454978245" target="_blank" rel="noopener noreferrer">исходном портфолио студии <ExternalArrow /></a>.</p>
     </div>
 
     <div className="portfolioOutro"><span className="eyebrow">Ваш проект может быть следующим</span><p>Расскажите о пространстве, которое хотите создать.</p><Link href="/contacts" className="textLink">Обсудить проект <span aria-hidden="true">⟶</span></Link></div>

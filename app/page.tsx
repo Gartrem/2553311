@@ -5,6 +5,7 @@ import HeroGallery from '@/components/HeroGallery';
 import Tariffs from '@/components/Tariffs';
 import Reviews from '@/components/Reviews';
 import Videos from '@/components/Videos';
+import ExternalArrow from '@/components/ExternalArrow';
 import { studioProjects } from '@/lib/projects';
 
 const base = process.env.NODE_ENV === 'production' ? '/2553311' : '';
@@ -75,7 +76,7 @@ export default function Home() {
 
     <section id="services" className="servicesSection sectionDark" data-reveal>
       <div className="sectionHead dark"><div><span className="eyebrow">02 / Услуги</span><h2>От первого эскиза<br/><i>до последней детали.</i></h2></div><p>Единый взгляд на проект позволяет удерживать качество на каждом этапе — от идеи до готового интерьера.</p></div>
-      <div className="serviceList">{services.map(([number, title, description]) => <Link className="serviceRow" key={number} href="/services"><span>{number}</span><h3>{title}</h3><p>{description}</p><b aria-hidden="true">↗</b></Link>)}</div>
+      <div className="serviceList">{services.map(([number, title, description]) => <Link className="serviceRow" key={number} href="/services"><span>{number}</span><h3>{title}</h3><p>{description}</p><b aria-hidden="true"><ExternalArrow /></b></Link>)}</div>
     </section>
 
     <section id="about" className="aboutSection" data-reveal>

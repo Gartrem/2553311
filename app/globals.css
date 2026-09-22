@@ -219,10 +219,13 @@ html{scrollbar-width:none}html::-webkit-scrollbar{width:0;height:0}
 @media(max-width:700px){.sampleProjectCta{display:block;margin-top:55px;padding-top:32px}.sampleProjectCta .textLink{margin-top:28px;white-space:normal}}
 
 /* Keep the supplied mark transparent while making its dark strokes legible. */
-.logoMark{display:block;width:100%;height:100%;overflow:hidden;isolation:isolate}
-.logoMark svg{display:block;width:100%;height:100%}
+.logoMark{position:relative;display:block;width:100%;height:100%;overflow:hidden;isolation:isolate}
+.logoMark img{position:absolute;display:block;width:118.3%;height:auto;max-width:none;left:-9.43%;top:-3.2%}
 .logoLight{filter:invert(1) hue-rotate(180deg)}
 .logoDetail{mix-blend-mode:screen}
+.externalArrow{display:inline-block;width:1em;height:1em;flex:none;vertical-align:-.12em}
+.footerContact .socialLinks a{display:inline-flex;align-items:center;gap:5px}
+.footerContact .socialLinks .externalArrow{width:12px;height:12px}
 .brand,.siteHeaderInner .brand{top:4px;width:134px;height:142px}
 .footerIdentity .logoMark{width:126px;height:134px}
 .mobileMenuTop .logoMark{width:100px;height:106px}

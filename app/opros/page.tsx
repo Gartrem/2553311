@@ -1,4 +1,5 @@
 import Questionnaire from './Questionnaire';
+import ExternalArrow from '@/components/ExternalArrow';
 
 export const metadata = {
   title: 'Рассчитать проект',
@@ -15,7 +16,7 @@ export default function QuestionnairePage() {
     <Questionnaire/>
     <div className="questionnaireAside">
       <span>Предпочитаете обсудить лично?</span>
-      <a href="tel:+73832553311">+7 (383) 255-33-11 <b aria-hidden="true">↗</b></a>
+      <a href="tel:+73832553311">+7 (383) 255-33-11 <b aria-hidden="true"><ExternalArrow /></b></a>
     </div>
   </div>;
 }

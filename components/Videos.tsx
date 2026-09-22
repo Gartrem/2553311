@@ -1,3 +1,5 @@
+import ExternalArrow from '@/components/ExternalArrow';
+
 const videos = [
   { id: 'hmRs-3ATj_M', title: 'Крутая квартира для родителей | Обзор ремонта' },
   { id: '66BZrRgvwyE', title: 'Мой самый дорогой ремонт' },
@@ -26,7 +28,7 @@ export default function Videos() {
       </a>)}
     </div>
     <div className="videosMore"><div className="videosMoreIntro"><span className="eyebrow">Смотреть дальше</span><p>Ещё шесть историй о домах и квартирах, которые уже стали частью жизни клиентов.</p></div>
-      <div className="videosMoreList">{videos.slice(3).map((video, index) => <a href={youtubeLink(video.id)} key={video.id} target="_blank" rel="noopener noreferrer" aria-label={`Смотреть на YouTube: ${video.title}`}><span className="videoListNumber">{String(index + 4).padStart(2, '0')}</span><span>{video.title}</span><b aria-hidden="true">↗</b></a>)}</div>
+      <div className="videosMoreList">{videos.slice(3).map((video, index) => <a href={youtubeLink(video.id)} key={video.id} target="_blank" rel="noopener noreferrer" aria-label={`Смотреть на YouTube: ${video.title}`}><span className="videoListNumber">{String(index + 4).padStart(2, '0')}</span><span>{video.title}</span><b aria-hidden="true"><ExternalArrow /></b></a>)}</div>
     </div>
     <a className="videosChannelLink" href="https://www.youtube.com/user/MsMegel/featured" target="_blank" rel="noopener noreferrer">Канал студии на YouTube <span aria-hidden="true">⟶</span></a>
   </section>;

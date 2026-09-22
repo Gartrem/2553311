@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import ExternalArrow from '@/components/ExternalArrow';
 import { useEffect, useRef, useState } from 'react';
 import { studioProjects } from '@/lib/projects';
 
@@ -32,7 +33,7 @@ export default function ProjectGallery() {
         <button type="button" onClick={event => { openerRef.current = event.currentTarget; setSelected(index); }} aria-label={`Открыть фотографию: ${project.title}, ${project.area ? `${project.area} м²` : project.category}`}>
           <span className="projectTileImage"><Image src={`${base}/assets/${project.image}`} alt={`${project.title} — фотография реализованного проекта`} fill sizes="(max-width: 700px) 100vw, (max-width: 1050px) 50vw, 33vw" /></span>
           <span className="projectTileInfo"><span>{String(index + 1).padStart(2, '0')} / {project.category}</span><span>{project.area ? `${project.area} м²` : 'Проект'}</span></span>
-          <span className="projectTileTitle">{project.title}<span aria-hidden="true">↗</span></span>
+          <span className="projectTileTitle">{project.title}<span aria-hidden="true"><ExternalArrow /></span></span>
         </button>
       </article>)}
     </div>
