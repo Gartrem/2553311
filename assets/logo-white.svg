@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132 117" role="img" aria-labelledby="title">
+  <title id="title">Ателье авторского ремонта</title>
+  <g transform="translate(5 2.6) scale(.92)" fill="none" stroke="#fff" stroke-width="6.5" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M16 72 52 8l37 64"/>
+    <path d="M31 53h48"/>
+    <path d="M59 27h22c13 0 19 6 19 16S94 60 81 60H69"/>
+    <path d="m77 59 15 13"/>
+  </g>
+  <g fill="#fff" font-family="Arial Narrow,Arial,Helvetica,sans-serif" text-anchor="start">
+    <text x="1" y="96" font-size="18" font-weight="400" letter-spacing="2.2" textLength="119" lengthAdjust="spacingAndGlyphs">АТЕЛЬЕ</text>
+    <text x="1" y="113" font-size="12.7" font-weight="400" letter-spacing="-.35" textLength="119" lengthAdjust="spacingAndGlyphs">авторского ремонта</text>
+  </g>
+</svg>
