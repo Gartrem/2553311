@@ -244,3 +244,12 @@ html{scrollbar-width:none}html::-webkit-scrollbar{width:0;height:0}
   .siteHeaderHome .desktopNav a:hover,.siteHeaderHome .headerContact a:hover{opacity:1;color:#6b4832}
 }
 @media(min-width:1051px) and (max-width:1250px){.siteHeaderHome::before{left:29vw}}
+
+/* Founder portrait on the opening slide. */
+.heroFounder{position:absolute;z-index:2;top:7.5%;right:10%;width:auto;height:90%;object-fit:contain;object-position:center bottom;pointer-events:none;filter:drop-shadow(0 20px 28px rgba(20,15,12,.18));animation:founderIn .65s ease both}
+@keyframes founderIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@media(min-width:1051px){.heroAside{z-index:4;left:77.2%;top:26.5%}}
+@media(max-width:1250px) and (min-width:1051px){.heroFounder{right:3%;height:90%}}
+@media(max-width:1050px){.heroFounder{z-index:2;top:auto;right:-2%;bottom:-1%;width:min(59vw,590px);height:auto;opacity:.92}.heroContent,.heroStats{z-index:4}}
+@media(max-width:700px){.heroFounder{right:-31%;bottom:auto;top:6.5%;width:92vw;opacity:.78;filter:drop-shadow(0 16px 25px rgba(20,15,12,.2))}.heroPanel{z-index:3}.heroVignette{z-index:3}.heroContent,.heroStats,.heroSlideControls{z-index:5}}
+@media(prefers-reduced-motion:reduce){.heroFounder{animation:none}}
