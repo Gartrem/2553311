@@ -22,7 +22,7 @@ export default function Videos() {
     </div>
     <div className="videosFeatured" aria-label="Избранные видеообзоры">
       {videos.slice(0, 3).map((video, index) => <a className="videoFeature" key={video.id} href={youtubeLink(video.id)} target="_blank" rel="noopener noreferrer" aria-label={`Смотреть на YouTube: ${video.title}`}>
-        <span className="videoFeatureVisual" style={{backgroundImage: `url(https://i.ytimg.com/vi/${video.id}/hqdefault.jpg)`}} aria-hidden="true"><span className="videoPlay">▶</span></span>
+        <span className="videoFeatureVisual" style={{backgroundImage: `url(https://i.ytimg.com/vi/${video.id}/hqdefault.jpg)`}} aria-hidden="true"><span className="videoPlay"><svg viewBox="0 0 24 24" fill="currentColor" focusable="false"><path d="M7 4.5v15l12-7.5L7 4.5Z" /></svg></span></span>
         <span className="videoFeatureMeta">Видеообзор <span>{String(index + 1).padStart(2, '0')} / 09</span></span>
         <span className="videoFeatureTitle">{video.title}</span>
       </a>)}
