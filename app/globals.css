@@ -228,3 +228,13 @@ html{scrollbar-width:none}html::-webkit-scrollbar{width:0;height:0}
 .mobileMenuTop .logoMark{width:100px;height:106px}
 @media(max-width:1050px){.brand,.siteHeaderInner .brand{width:82px;height:87px}}
 @media(max-width:700px){.brand,.siteHeaderInner .brand{width:69px;height:74px}}
+
+/* An even warm surface keeps navigation legible over both sky and dark walls. */
+@media(min-width:1051px){
+  .siteHeaderHome::before{content:"";position:absolute;inset:0 0 auto 31.5vw;height:140px;background:linear-gradient(180deg,rgba(240,233,224,.85),rgba(240,233,224,.76) 62%,rgba(240,233,224,0));pointer-events:none;z-index:0}
+  .siteHeaderHome>*{position:relative;z-index:1}
+  .siteHeaderHome .desktopNav,.siteHeaderHome .headerContact{color:#211d19;text-shadow:none;font-weight:500}
+  .siteHeaderHome .headerContact span{color:#51473f}
+  .siteHeaderHome .desktopNav a:hover,.siteHeaderHome .headerContact a:hover{opacity:1;color:#6b4832}
+}
+@media(min-width:1051px) and (max-width:1250px){.siteHeaderHome::before{left:29vw}}
