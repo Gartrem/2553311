@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import Logo from '@/components/Logo';
 
 const links = [
   ['/projects', 'Проекты'],
@@ -12,8 +13,6 @@ const links = [
   ['/contacts', 'Контакты'],
 ] as const;
 
-const logo = `${process.env.NODE_ENV === 'production' ? '/2553311' : ''}/assets/logo-white.svg`;
-
 export default function Header() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +21,7 @@ export default function Header() {
   return <header className={`siteHeader ${isHome ? 'siteHeaderHome' : 'siteHeaderInner'}`}>
     <div className="brandZone">
       <Link className="brand" href="/" aria-label="Ателье Авторского Ремонта — главная">
-        <img src={logo} alt="Ателье Авторского Ремонта" width="132" height="117" />
+        <Logo />
       </Link>
       <span className="brandDivider" aria-hidden="true" />
       <span className="brandStatement">Продуманные<br/>пространства<br/>для настоящей<br/>жизни</span>
@@ -40,7 +39,7 @@ export default function Header() {
 
     {menuOpen && <div id="mobile-navigation" className="mobileMenu">
       <div className="mobileMenuTop">
-        <img src={logo} alt="Ателье Авторского Ремонта" width="96" height="85" />
+        <Logo />
         <button type="button" onClick={() => setMenuOpen(false)} aria-label="Закрыть меню">✕</button>
       </div>
       <nav aria-label="Мобильная навигация">{links.map(([href, label], i) =>

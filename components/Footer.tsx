@@ -1,11 +1,10 @@
 import Link from 'next/link';
-
-const logo = `${process.env.NODE_ENV === 'production' ? '/2553311' : ''}/assets/logo-white.svg`;
+import Logo from '@/components/Logo';
 
 export default function Footer() {
   return <footer className="footer">
     <div className="footerTop">
-      <div className="footerIdentity"><img src={logo} alt="Ателье Авторского Ремонта" width="120" height="107"/><p>Продуманные пространства<br/>для настоящей жизни.</p></div>
+      <div className="footerIdentity"><Logo /><p>Продуманные пространства<br/>для настоящей жизни.</p></div>
       <nav className="footerLinks" aria-label="Навигация в подвале">
         <Link href="/projects">Проекты</Link><Link href="/services">Услуги</Link><Link href="/about">О студии</Link><Link href="/process">Процесс</Link><Link href="/contacts">Контакты</Link>
       </nav>
