@@ -57,8 +57,8 @@ button,input,select{font:inherit}button{cursor:pointer}a{color:inherit;text-deco
 .sectionHead h2,.aboutText h2,.contactCta h2,.pageTitle h1{font:400 clamp(52px,5.2vw,82px)/.99 Georgia,"Times New Roman",serif;letter-spacing:-.04em;margin:20px 0 0}
 .sectionHead h2 i,.aboutText h2 i{font-weight:400;color:#aa9989}
 .sectionHead p{max-width:430px;font-size:17px;line-height:1.55;color:#625a53;margin:0 0 6px}.sectionHead.dark p{color:#b4a9a0}.sectionHead.dark .eyebrow{color:#b4a397}
-.projectGallery{max-width:var(--max);margin:auto;display:grid;grid-template-columns:1.14fr .86fr;gap:3.4vw;align-items:start}
-.projectCardSmall{margin-top:105px}.projectImage{display:block;position:relative;overflow:hidden;background:#b0a397}.projectCardLarge .projectImage{height:620px}.projectCardSmall .projectImage{height:495px}
+.projectGallery{max-width:var(--max);margin:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;align-items:start}
+.projectCardSmall{margin-top:0}.projectImage{display:block;position:relative;overflow:hidden;background:#b0a397}.projectCardLarge .projectImage,.projectCardSmall .projectImage{height:auto;aspect-ratio:1.25}
 .projectImage img{transition:transform .7s ease}.projectImage:hover img{transform:scale(1.035)}.imageTag{position:absolute;left:18px;bottom:18px;padding:8px 11px;background:rgba(30,26,22,.75);color:#fff;font-size:10px;text-transform:uppercase;letter-spacing:.05em}
 .projectCardMeta{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding:22px 0 16px;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#71685f}.projectCardMeta a{color:#332b26}.projectCardMeta b{font-weight:400;font-size:19px;padding-left:12px}
 .projectCard h3{font:400 clamp(34px,3vw,48px)/1.04 Georgia,serif;letter-spacing:-.03em;margin:20px 0 11px}.projectCard p{max-width:580px;font-size:15px;line-height:1.55;color:#6f665e;margin:0}
@@ -124,7 +124,7 @@ button,input,select{font:inherit}button{cursor:pointer}a{color:inherit;text-deco
 .portfolioFeatureTitle h2{margin:0;font:400 clamp(35px,3.5vw,54px)/1.15 Georgia,"Times New Roman",serif;letter-spacing:-.03em}
 .portfolioFeatureTitle a{display:flex;align-items:center;justify-content:center;flex:none;width:45px;height:45px;border:1px solid #897d72;border-radius:50%;font-size:23px;transition:background .2s,color .2s}
 .portfolioFeatureTitle a:hover{background:#211d19;color:#fff}
-.portfolioCatalog{padding-top:160px;scroll-margin-top:30px}
+.portfolioCatalog{padding-top:0;scroll-margin-top:30px}
 .portfolioCatalogHeading{display:grid;grid-template-columns:1fr 1fr;align-items:end;gap:10px;margin-bottom:45px}
 .portfolioCatalogHeading .eyebrow{grid-column:1/-1}
 .portfolioCatalogHeading h2{font:400 clamp(52px,5vw,82px)/1 Georgia,"Times New Roman",serif;letter-spacing:-.04em;margin:6px 0 0}
@@ -198,7 +198,7 @@ html{scrollbar-width:none}html::-webkit-scrollbar{width:0;height:0}
 
 /* Studio video walkthroughs */
 .videosFeatured,.videosMore,.videosChannelLink{max-width:var(--max);margin-left:auto;margin-right:auto}
-.videosFeatured{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:20px}
+.videosFeatured{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 .videoFeature{display:block;min-width:0;color:inherit}
 .videoFeatureVisual{position:relative;display:block;aspect-ratio:1.46;background-color:#54483f;background-position:center;background-size:cover;overflow:hidden}
 .videoFeatureVisual:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(14,12,11,.32),rgba(14,12,11,.07));transition:background .25s}
@@ -216,8 +216,8 @@ html{scrollbar-width:none}html::-webkit-scrollbar{width:0;height:0}
 .videosMoreList a{display:grid;grid-template-columns:33px 1fr 20px;gap:14px;align-items:start;min-height:92px;padding:19px 4px 19px 0;border-bottom:1px solid rgba(255,255,255,.21);font:400 19px/1.22 Georgia,"Times New Roman",serif;transition:color .2s}
 .videosMoreList a:hover{color:#d5b89e}.videoListNumber{font:11px Arial,sans-serif;color:#a99a8c;margin-top:5px}.videosMoreList b{font:20px Arial,sans-serif;text-align:right}
 .videosChannelLink{display:flex;justify-content:space-between;gap:25px;width:max-content;max-width:100%;margin-top:55px;padding-bottom:14px;border-bottom:1px solid #b6a696;font-size:11px;letter-spacing:.055em;text-transform:uppercase;transition:color .2s}.videosChannelLink:hover{color:#d4b9a1}.videosChannelLink span{font-size:21px;line-height:12px}
-@media(max-width:1050px){.videosFeatured{grid-template-columns:repeat(2,minmax(0,1fr))}.videoFeature:last-child{grid-column:1 / -1;max-width:calc(50% - 10px)}.videosMore{grid-template-columns:1fr;gap:8px}.videosMoreIntro p{max-width:490px;margin-top:15px}}
-@media(max-width:700px){.videosFeatured{grid-template-columns:1fr;gap:39px}.videoFeature:last-child{grid-column:auto;max-width:none}.videoFeatureVisual{aspect-ratio:1.52}.videoFeatureTitle{font-size:28px}.videosMore{margin-top:68px}.videosMoreList{grid-template-columns:1fr}.videosMoreList a{min-height:75px;font-size:18px}.videosChannelLink{margin-top:40px}}
+@media(max-width:1050px){.videosFeatured{grid-template-columns:1fr}.videosMore{grid-template-columns:1fr;gap:8px}.videosMoreIntro p{max-width:490px;margin-top:15px}}
+@media(max-width:700px){.videosFeatured{grid-template-columns:1fr;gap:39px}.videoFeatureVisual{aspect-ratio:1.52}.videoFeatureTitle{font-size:28px}.videosMore{margin-top:68px}.videosMoreList{grid-template-columns:1fr}.videosMoreList a{min-height:75px;font-size:18px}.videosChannelLink{margin-top:40px}}
 .sampleProjectCta{max-width:1180px;margin:80px auto 0;padding:45px 0;border-top:1px solid var(--line);display:flex;align-items:flex-end;justify-content:space-between;gap:30px}.sampleProjectCta h2{font:400 clamp(32px,3.5vw,52px)/1.08 Georgia,serif;max-width:590px;letter-spacing:-.03em;margin:15px 0}.sampleProjectCta p{color:#6e675f;line-height:1.55;max-width:620px;margin:0}.sampleProjectCta .textLink{white-space:nowrap}
 @media(max-width:700px){.sampleProjectCta{display:block;margin-top:55px;padding-top:32px}.sampleProjectCta .textLink{margin-top:28px;white-space:normal}}
 
@@ -234,6 +234,7 @@ html{scrollbar-width:none}html::-webkit-scrollbar{width:0;height:0}
 .mobileMenuTop .logoMark{width:100px;height:106px}
 @media(max-width:1050px){.brand,.siteHeaderInner .brand{width:82px;height:87px}}
 @media(max-width:700px){.brand,.siteHeaderInner .brand{width:69px;height:74px}}
+.projectCardLarge .projectImage,.projectCardSmall .projectImage{height:auto;aspect-ratio:1.25}
 
 /* An even warm surface keeps navigation legible over both sky and dark walls. */
 @media(min-width:1051px){

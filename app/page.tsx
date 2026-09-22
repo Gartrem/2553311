@@ -62,7 +62,7 @@ export default function Home() {
       <div className="projectGallery">
         {featuredProjects.map((project, index) => <article className={`projectCard ${index === 0 ? 'projectCardLarge' : 'projectCardSmall'}`} key={project.anchor}>
           <Link href={`/projects#${project.anchor}`} className="projectImage" aria-label={`Смотреть проект ${project.title} в портфолио`}>
-            <Image src={`${base}/assets/${project.image}`} alt={`${project.category} ${project.title}, ${project.area} м² — реализованный проект ателье`} fill sizes={index === 0 ? '(max-width: 800px) 100vw, 60vw' : '(max-width: 800px) 100vw, 40vw'} />
+            <Image src={`${base}/assets/${project.image}`} alt={`${project.category} ${project.title}, ${project.area} м² — реализованный проект ателье`} fill sizes="(max-width: 800px) 100vw, 50vw" />
             <span className="imageTag">Реальный проект</span>
           </Link>
           <div className="projectCardMeta"><span>{project.category} / {project.area} м²</span><Link href={`/projects#${project.anchor}`}>Смотреть проект <b aria-hidden="true">⟶</b></Link></div>
