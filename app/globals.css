@@ -256,3 +256,9 @@ html{scrollbar-width:none}html::-webkit-scrollbar{width:0;height:0}
   .heroImage:first-child{height:510px}
   .heroImage:first-child img{object-position:72% top}
 }
+
+/* Use the supplied transparent portrait as-is so facial features stay exact. */
+.heroFounderPortrait{position:absolute;z-index:2;top:12.2%;left:41%;width:auto;height:90%;object-fit:contain;pointer-events:none;filter:drop-shadow(15px 13px 11px rgba(20,14,10,.32)) drop-shadow(0 30px 30px rgba(20,14,10,.25))}
+@media(max-width:1250px) and (min-width:1051px){.heroFounderPortrait{left:40%;height:87%}}
+@media(max-width:1050px){.heroFounderPortrait{left:auto;right:-2%;top:15%;width:auto;height:78%}}
+@media(max-width:700px){.heroFounderPortrait{left:auto;right:-28%;top:7%;width:auto;height:55%;opacity:.88}.heroPanel,.heroVignette{z-index:3}.heroContent,.heroStats,.heroSlideControls{z-index:5}}
