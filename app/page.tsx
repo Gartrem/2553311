@@ -4,6 +4,7 @@ import ContactCta from '@/components/ContactCta';
 import HeroGallery from '@/components/HeroGallery';
 import Tariffs from '@/components/Tariffs';
 import Reviews from '@/components/Reviews';
+import Videos from '@/components/Videos';
 import { studioProjects } from '@/lib/projects';
 
 const base = process.env.NODE_ENV === 'production' ? '/2553311' : '';
@@ -90,6 +91,7 @@ export default function Home() {
 
     <Tariffs eyebrow="05 / Тарифы" />
     <Reviews />
+    <Videos />
     <ContactCta />
   </>;
 }

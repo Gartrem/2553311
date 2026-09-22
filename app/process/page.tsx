@@ -25,6 +25,7 @@ export default function Process() {
         <strong>{number}</strong>
         <div><h2>{title}</h2><p>{description}</p></div>
       </article>)}</div>
+      <aside className="sampleProjectCta"><div><span className="eyebrow">Пример документации</span><h2>Посмотрите, как устроен дизайн-проект</h2><p>Запросите пример проектного альбома: вы увидите состав чертежей и порядок подачи решений.</p></div><a className="textLink" href="mailto:2553311@list.ru?subject=%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80%20%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0">Запросить пример <span aria-hidden="true">⟶</span></a></aside>
     </section>
     <ContactCta/>
   </>;
