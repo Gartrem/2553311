@@ -12,7 +12,7 @@ export default function Tariffs({eyebrow = 'Пакеты услуг'}:{eyebrow?:
     <div className="tariffsHead">
       <span className="eyebrow">{eyebrow}</span>
       <h2 id="tariffs-title">Выберите глубину проработки</h2>
-      <p>Тарифы исходного сайта указаны за квадратный метр. Актуальную цену и состав работ уточняем для конкретного объекта до заключения договора.</p>
+      <p>Стоимость указана за квадратный метр. Актуальную цену и состав работ уточняем для конкретного объекта до заключения договора.</p>
     </div>
     <div className="tariffGrid">{tariffs.map((tariff, index) => <article className="tariffCard" key={tariff.name}>
       <span className="tariffIndex">0{index+1} / 04</span>

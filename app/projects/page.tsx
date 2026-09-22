@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import ProjectGallery from '@/components/ProjectGallery';
-import ExternalArrow from '@/components/ExternalArrow';
 
 export const metadata = {
   title: 'Проекты',
@@ -19,7 +18,6 @@ export default function Projects() {
     <div className="portfolioCatalog" id="all-projects">
       <div className="portfolioCatalogHeading"><span className="eyebrow">Полное портфолио</span><h2>Все проекты</h2><p>Фрагменты 21 реализованного проекта. Выберите карточку, чтобы рассмотреть фотографию.</p></div>
       <ProjectGallery />
-      <p className="portfolioOriginalLink">Другие фотографии этих объектов доступны в <a href="https://2553311.ru/#rec454978245" target="_blank" rel="noopener noreferrer">исходном портфолио студии <ExternalArrow /></a>.</p>
     </div>
 
     <div className="portfolioOutro"><span className="eyebrow">Ваш проект может быть следующим</span><p>Расскажите о пространстве, которое хотите создать.</p><Link href="/contacts" className="textLink">Обсудить проект <span aria-hidden="true">⟶</span></Link></div>

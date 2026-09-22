@@ -188,7 +188,6 @@ html{scrollbar-width:none}html::-webkit-scrollbar{width:0;height:0}
 .projectTileImage{display:block;height:390px;position:relative;overflow:hidden;background:#cec5ba}.projectTileImage img{transition:transform .5s ease}.projectTile button:hover img{transform:scale(1.045)}
 .projectTileInfo{display:flex;justify-content:space-between;gap:10px;margin:17px 0 11px;text-transform:uppercase;font-size:10px;letter-spacing:.055em;color:#807467}
 .projectTileTitle{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;font:400 clamp(25px,2.45vw,38px)/1.05 Georgia,serif;letter-spacing:-.025em}.projectTileTitle span{font:25px Arial,sans-serif}
-.portfolioOriginalLink{margin:42px 0 0;color:#6c625a;font-size:14px;line-height:1.5}.portfolioOriginalLink a{color:#29231e;border-bottom:1px solid #9b8878}
 .projectViewer{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:28px;background:rgba(18,15,13,.9);color:#f4eee7}
 .projectViewerPanel{position:relative;width:min(1050px,100%);max-height:100%;display:flex;flex-direction:column}.projectViewerImage{position:relative;width:100%;height:min(70vh,750px);background:#2a2622}.projectViewerImage img{object-fit:contain}
 .projectViewerClose{position:absolute;right:0;top:-52px;z-index:2;width:44px;height:44px;color:#f4eee7;background:transparent;border:1px solid rgba(255,255,255,.65);border-radius:50%;font-size:30px;line-height:1}
