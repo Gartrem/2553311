@@ -1,17 +1,29 @@
-# Ателье Авторского Ремонта — premium redesign
+# Ателье Авторского Ремонта
 
-Next.js / TypeScript prototype based on the approved architectural editorial direction.
+Редизайн сайта на Next.js 15, TypeScript и CSS. Он экспортируется как статический сайт для GitHub Pages по адресу `/2553311/`.
 
-## Run
+## Локальный запуск
+
 ```bash
-npm install
+npm ci
 npm run dev
 ```
-Open http://localhost:3000
 
-## Important before launch
-- Interior photography is currently loaded from temporary Unsplash placeholders. Replace every placeholder with real project photography from «Ателье Авторского Ремонта».
-- Confirm `300+` before publishing; `22 years` follows the 2004 → 2026 positioning.
-- Add the verified office address, testimonials, project facts, service copy, founder portrait/video and privacy-policy text.
-- Wire the contact form to the selected CRM/backend.
-- The supplied raster logo is included in `public/assets/logo-white.png`; replace with the approved vector master when available.
+Откройте `http://localhost:3000/`.
+
+## Сборка и публикация
+
+```bash
+npm run build
+```
+
+Статические файлы появятся в `out/`. Чтобы обновить существующий GitHub Pages, поместите содержимое `out/` в корень публикуемой ветки репозитория `2553311`. Настройка `basePath` для `/2553311` уже включена. Исходники можно хранить в отдельной ветке или папке; не публикуйте `node_modules` и `.next`.
+
+## Содержание
+
+- Первый экран повторяет композицию предоставленного референса. Фоновая интерьерная фотография подготовлена на основе пользовательского изображения; текст, логотип и кнопки сайта остаются живыми элементами интерфейса.
+- Портфолио включает 21 объект и по одному реальному фото каждого объекта с исходного сайта `2553311.ru`. У первых трёх проектов есть крупные карточки. Полные фотоподборки остаются на исходном сайте студии.
+- Страницы «О студии», «Услуги», «Процесс», «Контакты» и анкета `/opros` содержат сведения об основателе, восьми этапах работы, четырёх тарифах, отзывы и контактные данные. Тарифы перенесены из исходного сайта; актуальность цены нужно подтвердить перед договором.
+- Интерьерные изображения `living-room.webp` и `kitchen-dining.webp` созданы как концептуальные визуализации и не обозначают реализованные объекты. Фото с именами `project-*.webp` относятся к реальным проектам.
+- Формы консультации и анкеты проверяют ввод и открывают письмо в почтовом приложении посетителя. Письмо необходимо отправить там. Статический сайт не отправляет данные на сервер; предусмотрены текст заявки для копирования и телефон.
+- Логотип и favicon выполнены в SVG на основе предоставленного визуального образца.

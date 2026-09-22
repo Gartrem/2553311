@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Ателье авторского ремонта">
+  <rect width="64" height="64" rx="3" fill="#221d19"/>
+  <g transform="translate(-.75 10.69) scale(.598)" fill="none" stroke="#fff" stroke-width="6.5" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M16 72 52 8l37 64"/>
+    <path d="M31 53h48"/>
+    <path d="M59 27h22c13 0 19 6 19 16S94 60 81 60H69"/>
+    <path d="m77 59 15 13"/>
+  </g>
+</svg>

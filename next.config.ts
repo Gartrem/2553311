@@ -9,7 +9,6 @@ const nextConfig: NextConfig = {
   assetPrefix: isProd ? '/2553311/' : '',
   images: {
     unoptimized: true,
-    domains: ['images.unsplash.com'],
   },
 };
 

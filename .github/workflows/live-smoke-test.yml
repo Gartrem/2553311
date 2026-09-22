@@ -23,7 +23,7 @@ jobs:
           ok=0
           for i in $(seq 1 24); do
             if curl -fsSL --max-time 20 "$URL" -o "$BODY"; then
-              if grep -q "Проектируем" "$BODY" && ! grep -q "premium redesign" "$BODY"; then
+              if grep -q "Смотреть все 21 проект" "$BODY" && ! grep -q "premium redesign" "$BODY"; then
                 ok=1
                 break
               fi
@@ -40,15 +40,19 @@ jobs:
           grep -q "Ателье Авторского Ремонта" "$BODY"
           grep -q "/2553311/_next/static/css/" "$BODY"
 
-          for path in "projects/" "services/" "about/" "process/" "contacts/" "projects/european-shore/"; do
+          for path in "projects/" "services/" "about/" "process/" "contacts/" "opros/"; do
             code=$(curl -sS -o /dev/null -w "%{http_code}" --max-time 20 "${URL}${path}")
             echo "$path -> $code"
             test "$code" = "200"
           done
 
-          logo_code=$(curl -sS -o /dev/null -w "%{http_code}" --max-time 20 "https://gartrem.github.io/2553311/assets/logo-white.png")
+          logo_code=$(curl -sS -o /dev/null -w "%{http_code}" --max-time 20 "https://gartrem.github.io/2553311/assets/logo-white.svg")
           echo "logo -> $logo_code"
           test "$logo_code" = "200"
+
+          hero_code=$(curl -sS -o /dev/null -w "%{http_code}" --max-time 20 "https://gartrem.github.io/2553311/assets/hero-reference.webp")
+          echo "hero -> $hero_code"
+          test "$hero_code" = "200"
 
           css_path=$(grep -o '/2553311/_next/static/css/[^"]*\.css' "$BODY" | head -n 1)
           css_code=$(curl -sS -o /dev/null -w "%{http_code}" --max-time 20 "https://gartrem.github.io${css_path}")

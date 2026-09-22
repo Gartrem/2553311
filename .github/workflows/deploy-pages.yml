@@ -26,14 +26,14 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build static site
         run: npm run build
 
       - name: Copy export to repository root
         run: |
-          rm -rf _next assets about contacts process projects services
+          rm -rf _next assets about contacts process projects services opros
           rm -f index.html 404.html index.txt about.txt contacts.txt process.txt projects.txt services.txt
           cp -R out/. .
           touch .nojekyll
