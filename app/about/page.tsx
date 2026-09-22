@@ -14,7 +14,7 @@ export default function About() {
         <p>Ателье Авторского Ремонта работает в Новосибирске с 2004 года. Проектируем интерьеры квартир, частных домов и офисов.</p>
       </div>
       <div className="aboutFeature">
-        <div className="aboutPhoto"><Image src={`${base}/assets/living-room.webp`} alt="Тёплый интерьер гостиной — визуализация подхода студии" fill sizes="(max-width: 1050px) 100vw, 50vw"/></div>
+        <div className="aboutPhoto"><Image src={`${base}/assets/mikhail-smirnov.png`} alt="Михаил Смирнов, основатель Ателье Авторского Ремонта" fill sizes="(max-width: 1050px) 100vw, 50vw" priority/></div>
         <div>
           <span className="eyebrow">Михаил Смирнов · основатель студии</span>
           <h2>Дом начинается с образа жизни</h2>
