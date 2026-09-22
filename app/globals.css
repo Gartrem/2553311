@@ -253,6 +253,7 @@ html{scrollbar-width:none}html::-webkit-scrollbar{width:0;height:0}
 }
 @media(max-width:1050px){.heroImage:first-child img{object-position:70% center}}
 @media(max-width:700px){
-  .heroImage:first-child{height:510px}
+  .heroPanel:after{display:none}
+  .heroImage:first-child{height:510px;-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 70%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,#000 70%,transparent 100%)}
   .heroImage:first-child img{object-position:72% top}
 }
