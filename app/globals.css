@@ -230,6 +230,7 @@ html{scrollbar-width:none}html::-webkit-scrollbar{width:0;height:0}
 .externalArrow{display:inline-block;width:1em;height:1em;flex:none;vertical-align:-.12em}
 .footerContact .socialLinks a{display:inline-flex;align-items:center;gap:5px}
 .footerContact .socialLinks .externalArrow{width:12px;height:12px}
+.footerContact .socialLinks .socialIcon{width:15px;height:15px;flex:0 0 15px}
 .brand,.siteHeaderInner .brand{top:4px;width:134px;height:142px}
 .footerIdentity .logoMark{width:126px;height:134px}
 .mobileMenuTop .logoMark{width:100px;height:106px}
