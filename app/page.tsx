@@ -41,7 +41,7 @@ export default function Home() {
         <p>Создаём интерьеры квартир и домов в Новосибирске,<br className="desktopBreak"/>{' '}в которых эстетика, функциональность и качество<br className="desktopBreak"/>{' '}работают на вашу жизнь — сегодня и через годы.</p>
         <div className="heroActions">
           <Link href="/contacts" className="primaryBtn">Обсудить проект <span aria-hidden="true">⟶</span></Link>
-          <span className="microCopy">Бесплатная<br/>консультация</span>
+          <span className="microCopy">Экспертный<br/>разбор</span>
         </div>
       </div>
       <div className="heroStats" aria-label="О студии в цифрах">
